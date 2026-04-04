@@ -1,0 +1,77 @@
+:root {
+    --main-blue: #667eea;
+    --main-purple: #764ba2;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+
+.card-custom {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.error-msg {
+    color: #dc3545;
+    font-size: 0.85rem;
+    display: none; /* مخفي افتراضياً */
+    margin-top: 5px;
+}
+
+/* Exam Page Styles */
+.timer-container {
+    height: 10px;
+    background: #e9ecef;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.timer-fill {
+    height: 100%;
+    background: #ffc107;
+    width: 100%;
+    transition: 1s linear;
+}
+
+.option-btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.option-btn.active {
+    background: #ffc107 !important;
+    border-color: #ffc107;
+    font-weight: bold;
+}
+
+.mark-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff3cd;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-mark {
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0 5px;
+}
