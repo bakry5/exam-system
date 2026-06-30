@@ -1,3 +1,9 @@
+// Auth guard — redirect to signin if not logged in
+if (!localStorage.getItem('currentUser') || !document.cookie.includes('login=true')) {
+    alert('Please sign in first to access the exam.');
+    window.location.replace('signin.html');
+}
+
 let questions = [];
 let currentIndex = 0;
 let userAnswers = {};
